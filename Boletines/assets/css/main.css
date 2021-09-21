@@ -21,15 +21,15 @@ h1{
 }
 .content{
   color:#0D1526;
-  max-height: 500px;
   max-width: 960px;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   background: white;
   box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.25);
   position: relative;
   border-radius:  1em;
   padding: 1.8em;
+  overflow: scroll;
 }
 .title{
   text-transform: uppercase;
@@ -58,7 +58,7 @@ h1{
 }
 .posicion{
   background-color: #ADBCD9;
-  padding: 10px;
+  padding: 0.7em;
   border-radius: 2em;
 }
 .accion{
@@ -87,4 +87,39 @@ a{
 img{
   width: 5%;
   padding-left: 10%;
+}
+.content{
+  padding: 1em;
+}
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+ font-size: 1.5em;
+ font-weight: bold; 
+}
+th{
+  display: none;
+}
+
+@media (min-heigth:550px){
+  .content{
+    height: 500px;
+  }
+}
+@media (min-width:900px) {
+  .content{
+    padding: 1.8em;
+  }
+  td{
+    display: table-cell;
+    width: auto;
+  }
+  td:nth-of-type(1){
+   font-size: 1em; 
+  }
+  th{
+    display: table-cell;
+  }
 }
