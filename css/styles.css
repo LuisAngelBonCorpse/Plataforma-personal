@@ -1,0 +1,42 @@
+body{
+  background: #ddd;
+  font-family: 'Roboto', sans-serif;
+}
+figure{
+  margin: 0;
+}
+.nv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 5vw;
+}
+.img-logo{
+  height: 7vh;
+}
+h1,h2{
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  margin: 3vh 0;
+  font-size: 8vh;
+}
+h2{
+  line-height: 8vh;
+  font-size: 6vh;
+}
+h3{
+  padding-left: 10vw;
+  font-size: 4.5vh;
+}
+.txt{
+  padding: 0 5vw;
+  text-align: justify;
+  font-size: 3vh;
+}
+.UnsplashAPI{
+  margin: 3vh 0;
+}
+.buscar{
+  display: inline-block;
+  margin: 0 30vw;
+}
