@@ -49,7 +49,7 @@ async function getImages(query) {
     </a>
     </div>`;
     
-    for(let i = 0 ; i < idImagenes.length; i++ ) {     
+    for(let i = 0 ; i <imagesList.length && i < idImagenes.length; i++ ) {     
       
       const item = document.getElementById(idImagenes[i]);
       const image = document.createElement('img');
