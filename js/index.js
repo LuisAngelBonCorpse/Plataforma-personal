@@ -3,10 +3,15 @@ const endPoint = 'https://api.unsplash.com/search/photos';
 
 const $btnSearchI = document.querySelector('#searchI');
 const $keyWords = document.querySelector('#keyWords');
+const idImagenes = ["img1", "img2","img3", "img4","img5"];
 
+const $scrum = document.querySelector('#Scrum');
+const $popUpScrum = document.querySelector('#popUpScrum');
+const $closeScrum = document.querySelector('#popup-close-scrum');
 
-const idImagenes = ["img1", "img2","img3", "img4","img5"]
-
+const $git = document.querySelector('#Git');
+const $popUpGit = document.querySelector('#popUpGit');
+const $closeGit = document.querySelector('#popup-close-git');
 
 async function getImages(query) {
   let response = await fetch(endPoint + '?query=' + query + '&client_id=' + accesKey);
@@ -70,4 +75,23 @@ $btnSearchI.addEventListener('click', () => {
   getImages(input.replace(' ', ','));
 });
 
+$scrum.addEventListener('click', () => {
+  $popUpScrum.style.display = 'block';      //hace visible el pop up agregandole un display, por defecto esta en none
+});
+$git.addEventListener('click', () => {
+  $popUpGit.style.display = 'block';      
+});
 
+$popUpScrum.addEventListener('click', e => {
+  e.target.className === 'popup-wrapper' ? $popUpScrum.style.display = "none" : null;
+});  //si se clickea fuera del popup se oculta de nuevo
+$popUpGit.addEventListener('click', e => {
+  e.target.className === 'popup-wrapper' ? $popUpGit.style.display = "none" : null;
+});  
+
+$closeScrum.addEventListener('click', () => {
+  $popUpScrum.style.display = 'none';      //se oculta dandole a la X
+});
+$closeGit.addEventListener('click', () => {
+  $popUpGit.style.display = 'none';      //se oculta dandole a la X
+});

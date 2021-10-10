@@ -42,6 +42,49 @@ h3{
   width: 100%;
   height: 75px;
   border-radius: 10px;
-  
 }
 
+.desplegable{
+  border: none;
+  cursor: pointer;
+  background: #ddd;
+}
+
+.desplegable:hover {
+  border: solid 2px black;
+}
+.popup-wrapper {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.popup {
+  width: 100%;
+  height: 90%;
+  max-width: 1000px;
+  max-height: 700px;
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  position: relative;
+}
+
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.certificados{
+  width: 100%;
+  height: 450px;
+}

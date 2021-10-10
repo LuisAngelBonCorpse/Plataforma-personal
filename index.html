@@ -59,12 +59,12 @@
       </article> 
       <section class="tecnologiesAndCertificates">
         <h3>Tecnologies & Certificates</h3>
-        <div class="logos">
+        <div class="logos mx-4">
           <div class="row d-flex flex-nowrap mb-4">
             <div class="col-sm-4">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="logo javascript" class="logoT">
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 px-2">
               <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" class="logoT">
             </div>
             <div class="col-sm-4">
@@ -90,17 +90,39 @@
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png" class="logoT">
             </div>
             <div class="col-sm-4">
-              <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" class="logoT">
+              <button type="button" class="desplegable" id="Git">
+                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png"  alt="logo git" class="logoT">
+              </button>
             </div>
           </div>
           <div class="row d-flex flex-nowrap mb-4">
             <div class="col-sm-3">
             </div>
             <div class="col-sm-6">
-              <img src="https://www.scrum.org/themes/custom/scrumorg/assets/images/logo-250.png" alt="logo javascript" class="logoT">
+              <button type="button" class="desplegable" id="Scrum">
+                <img src="https://www.scrum.org/themes/custom/scrumorg/assets/images/logo-250.png" alt="logo Scrum" class="logoT">
+              </button>
             </div>
             <div class="col-sm-3">
             </div>
+        </div>
+        <div class="popup-wrapper" id="popUpScrum">
+          <div class="popup">
+              <div id="popup-close-scrum" class="popup-close">X</div>
+              <div class="popup-content">
+                  <h3>Certificate Scrum</h3>
+                  <embed src="docs/Scrum.pdf" type="" class="certificados">
+              </div>
+          </div>
+        </div>
+        <div class="popup-wrapper" id="popUpGit">
+          <div class="popup">
+              <div id="popup-close-git" class="popup-close">X</div>
+              <div class="popup-content">
+                  <h3>Certificate Git</h3>
+                  <embed src="docs/Profecional de Git.pdf" type="" class="certificados">
+              </div>
+          </div>
         </div>
       </section>
       <section class="repoCarrusel">
