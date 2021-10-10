@@ -19,6 +19,9 @@
 </head>
 
 <body>
+  <div id="contenedor_carga">
+    <img src="img/loader.gif" alt="Gif de carga" id="carga" />
+  </div>
   <header>
     <div class="col-sm-12 nv">
       <img src="img/Logo 1.png" alt="logoPersonal" class="img-logo" />
@@ -33,6 +36,12 @@
               id="menuHam" /></a>
           <ul id="elementos">
             <li class="cabeceraMenu">OPTIONS</li>
+            <li>
+              <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+              <label class="custom-control-label" for="customSwitch1">Modo obscuro</label>
+              </div>
+            </li>
           </ul>
         </li>
       </ul>
@@ -238,5 +247,4 @@
     crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
 </body>
-
 </html>

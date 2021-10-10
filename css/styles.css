@@ -1,3 +1,17 @@
+/* Presets para que corra correctamente el loader*/
+*,*:after,*:before{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* 
+  Estilos para el sitio, hecho movile first, por lo que los primeros estilos son todos para movil.
+*/
+
+
+/* Selectores de etiquetas */
 body{
   background: #ddd;
   font-family: 'Roboto', sans-serif;
@@ -5,99 +19,12 @@ body{
 figure{
   margin: 0;
 }
-.nv{
-  background: linear-gradient(180deg, #555 0%, #777 40%, rgba(221, 221, 221, 0.5) 100%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6vh 10vw;
-  position: fixed;
-  z-index: 50;
-  text-align: center;
-}
-.nv button{
-  background-color: #ddd0;
-}
-#menuHam{
-  height: 5vh;
-  align-content: center;
-}
-ul{
-  list-style: none;
-}
-#menu{
-  margin:0;
-  padding:0;
-}
-#menu li {
-  background-color:#777;
-  position:relative;
-  float:right;
-  margin:0;
-  padding:0;
-}
-
-#menu a{
-  display:block;
-  padding:10px;
-  letter-spacing:1vw;
-}
-
-#menu li:hover {
-  background:#aaa; 
-}
-
-#menu ul li:hover{
-  color: black;
-}
-
-#menu ul {
-  list-style:none;
-  display:none;
-  position:absolute;
-  top:100%;
-  right:0;
-  background:#F1ECE9;
-  padding:0;
-}
-
-#menu ul li{
-  float:none;
-  width: 190%;
-  padding-top: 4%;
-  padding-bottom: 5%;
-  padding-left: 9%;
-  color: #ddd;
-  font-size: 3vh;
-}
-
-
-#menu li:hover > ul {
-  display:block;
-}
-
-#menu ul .cabeceraMenu{
-  padding: 10%;
-  font-size: 3.5vh;
-  text-decoration: underline;
-}
-
-#bandera{
-  width: 100%;
-}
-#langSelect{
-  font-size: 3vh;
-  color: #ddd;
-}
 figcaption a img{
   height: 5vh;
   padding-bottom: 10%;
 }
-.titulos{
-  padding-top: 23vh;
-}
-.img-logo{
-  height: 12vh;
+ul{
+  list-style: none;
 }
 h1,h2{
   font-family: 'Rock Salt', cursive;
@@ -112,6 +39,32 @@ h2{
 h3{
   padding-left: 10vw;
   font-size: 4.5vh;
+}
+footer{
+  padding-top: 10vh;
+  background: linear-gradient(0deg, #333 0%, #777777 50%, rgba(221, 221, 221, 0.5) 100%);
+}
+
+
+/* Selectores por clase */
+.nv{
+  background: linear-gradient(180deg, #555 0%, #777 40%, rgba(221, 221, 221, 0.5) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6vh 10vw;
+  position: fixed;
+  z-index: 50;
+  text-align: center;
+}
+.nv button{
+  background-color: #ddd0;
+}
+.titulos{
+  padding-top: 23vh;
+}
+.img-logo{
+  height: 12vh;
 }
 .txt{
   padding: 0 5vw;
@@ -128,13 +81,11 @@ h3{
   height: 75px;
   border-radius: 10px;
 }
-
 .desplegable{
   border: none;
   cursor: pointer;
   background: #ddd;
 }
-
 .desplegable:hover {
   border: solid 2px black;
 }
@@ -148,7 +99,6 @@ h3{
   height: 100vh;
   z-index: 100;
 }
-
 .popup {
   width: 100%;
   height: 90%;
@@ -159,8 +109,6 @@ h3{
   padding: 20px;
   position: relative;
 }
-
-
 .popup-close {
   position: absolute;
   top: 5px;
@@ -168,39 +116,28 @@ h3{
   cursor: pointer;
   font-size: 1.5rem;
 }
-
 .certificados{
   width: 100%;
   height: 450px;
 }
-
 .info{
   display: inline-block;
   padding: 10px 20px;
   border-radius: 20px;
   background-color: rgba(51, 51, 51, 0.45);
 }
-
-footer{
-  padding-top: 10vh;
-  background: linear-gradient(0deg, #333 0%, #777777 50%, rgba(221, 221, 221, 0.5) 100%);
-}
-
 .redes{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
 .imgRed{
   width: 80%;
   margin: 5% 0;
 }
-
 .logoFoot{
   width: 30vw;
 }
-
 .formContact{
   text-align: center;
   width: 100vw;
@@ -208,17 +145,94 @@ footer{
   margin: 10% 0;
   border-radius: 5px;
 }
-
 .formContact input, .formContact textarea{
   width: 90%;
   margin-bottom: 4%;
   border-radius: 20px;
   padding: 2%;
 }
-
 .formContact button{
   width: 50%;
   border-radius: 20px;
   margin-bottom: 5%;
   padding: 1%;
 }
+
+
+/* Selectores por ID */
+#menuHam{
+  height: 5vh;
+  align-content: center;
+}
+#menu{
+  margin:0;
+  padding:0;
+}
+#menu li {
+  background-color:#777;
+  position:relative;
+  float:right;
+  margin:0;
+  padding:0;
+}
+#menu a{
+  display:block;
+  padding:10px;
+  letter-spacing:1vw;
+}
+#menu li:hover {
+  background:#aaa; 
+}
+#menu ul li:hover{
+  color: black;
+}
+#menu ul {
+  list-style:none;
+  display:none;
+  position:absolute;
+  top:100%;
+  right:0;
+  background:#F1ECE9;
+  padding:0;
+}
+#menu ul li{
+  float:none;
+  width: 190%;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  padding-left: 0;
+  color: #ddd;
+  font-size: 3vh;
+}
+#menu li:hover > ul {
+  display:block;
+}
+#menu ul .cabeceraMenu{
+  padding: 5%;
+  font-size: 3.5vh;
+  text-decoration: underline;
+}
+#bandera{
+  width: 100%;
+}
+#langSelect{
+  font-size: 3vh;
+  color: #ddd;
+}
+#contenedor_carga{
+	background-color: rgba(255, 255, 255, 0.9);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+}
+#carga{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+
+/* Media */

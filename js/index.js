@@ -95,3 +95,9 @@ $closeScrum.addEventListener('click', () => {
 $closeGit.addEventListener('click', () => {
   $popUpGit.style.display = 'none';      //se oculta dandole a la X
 });
+
+window.onload = function(){
+  var $contenedor = document.querySelector('#contenedor_carga');
+  $contenedor.style.visibility = 'hidden';
+  $contenedor.style.display = 'none'; 
+}
