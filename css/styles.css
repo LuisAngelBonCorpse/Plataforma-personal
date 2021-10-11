@@ -13,7 +13,6 @@
 
 /* Selectores de etiquetas */
 body{
-  background: #ddd;
   font-family: 'Roboto', sans-serif;
 }
 figure{
@@ -48,21 +47,28 @@ h4{
 }
 footer{
   padding-top: 10vh;
+  padding: 3vh 7vw 1vh 7vw;
+  max-height: 389px;
 }
-
+header{
+  max-height: 200px;
+}
+main{
+  padding-top: 17vh;
+}
 
 /* Selectores por clase */
 .nv{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6vh 10vw;
+  padding: 3vh 9vw;
   position: fixed;
   z-index: 50;
   text-align: center;
 }
 .titulos{
-  padding-top: 23vh;
+  padding-top: 17vh;
 }
 .img-logo{
   height: 12vh;
@@ -78,7 +84,7 @@ footer{
   background-color: #433C46;
 }
 .logoT{
-  width: 100%;
+  width: 76px;
   height: 75px;
   border-radius: 10px;
 }
@@ -125,7 +131,7 @@ footer{
   display: inline-block;
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: rgba(51, 51, 51, 0.45);
+  background-color: rgba(51, 51, 51, 0.7);
 }
 .redes{
   display: flex;
@@ -135,16 +141,19 @@ footer{
 .imgRed{
   width: 80%;
   margin: 5% 0;
+  max-width: 85px;
 }
 .logoFoot{
   width: 30vw;
+  max-height: 200px;
 }
 .formContact{
   text-align: center;
-  width: 100vw;
+  width: 70vw;
   background-color: #5F5663;
-  margin: 10% 0;
   border-radius: 5px;
+  max-height: 250px;
+  max-height: 250px;
 }
 .formContact input, .formContact textarea{
   width: 90%;
@@ -241,3 +250,9 @@ footer{
 
 
 /* Media */
+
+@media only screen and (min-height: 761px) {
+  main{
+    padding-top: 25vh;
+  }
+}
