@@ -31,24 +31,28 @@ h1,h2{
   text-align: center;
   margin: 3vh 0;
   font-size: 8vh;
+  color: #8AE762;
+  text-shadow: 0 1vh 1vh #98ac8f66;
 }
 h2{
   line-height: 8vh;
   font-size: 6vh;
 }
 h3{
+  color: #FCFECA;
   padding-left: 10vw;
   font-size: 4.5vh;
 }
+h4{
+  color: #FCFECA;
+}
 footer{
   padding-top: 10vh;
-  background: linear-gradient(0deg, #333 0%, #777777 50%, rgba(221, 221, 221, 0.5) 100%);
 }
 
 
 /* Selectores por clase */
 .nv{
-  background: linear-gradient(180deg, #555 0%, #777 40%, rgba(221, 221, 221, 0.5) 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,9 +60,6 @@ footer{
   position: fixed;
   z-index: 50;
   text-align: center;
-}
-.nv button{
-  background-color: #ddd0;
 }
 .titulos{
   padding-top: 23vh;
@@ -70,11 +71,11 @@ footer{
   padding: 0 5vw;
   text-align: justify;
   font-size: 3vh;
+  color: #FEFFDC;
 }
 .UnsplashAPI{
   margin: 3vh 0;
-  background-color: #333;
-  color: #ddd;
+  background-color: #433C46;
 }
 .logoT{
   width: 100%;
@@ -84,10 +85,10 @@ footer{
 .desplegable{
   border: none;
   cursor: pointer;
-  background: #ddd;
+  background: #242225;
 }
 .desplegable:hover {
-  border: solid 2px black;
+  border: solid 2px #F03D5D;
 }
 .popup-wrapper {
   display: none;
@@ -104,7 +105,7 @@ footer{
   height: 90%;
   max-width: 1000px;
   max-height: 700px;
-  background: white;
+  background: #FEFFDC;
   margin: 10% auto;
   padding: 20px;
   position: relative;
@@ -141,7 +142,7 @@ footer{
 .formContact{
   text-align: center;
   width: 100vw;
-  background-color: #ddd;
+  background-color: #5F5663;
   margin: 10% 0;
   border-radius: 5px;
 }
@@ -157,6 +158,9 @@ footer{
   margin-bottom: 5%;
   padding: 1%;
 }
+.iconoL{
+  display: none;
+}
 
 
 /* Selectores por ID */
@@ -169,11 +173,12 @@ footer{
   padding:0;
 }
 #menu li {
-  background-color:#777;
+  background-color:#433C46;
   position:relative;
   float:right;
   margin:0;
   padding:0;
+  text-align: left;
 }
 #menu a{
   display:block;
@@ -181,10 +186,10 @@ footer{
   letter-spacing:1vw;
 }
 #menu li:hover {
-  background:#aaa; 
+  background:#5F5663; 
 }
 #menu ul li:hover{
-  color: black;
+  color: #242225;
 }
 #menu ul {
   list-style:none;
@@ -192,7 +197,7 @@ footer{
   position:absolute;
   top:100%;
   right:0;
-  background:#F1ECE9;
+  background:#FEFFDC;
   padding:0;
 }
 #menu ul li{
@@ -201,7 +206,7 @@ footer{
   padding-top: 4%;
   padding-bottom: 5%;
   padding-left: 0;
-  color: #ddd;
+  color: #FEFFDC;
   font-size: 3vh;
 }
 #menu li:hover > ul {
@@ -217,7 +222,7 @@ footer{
 }
 #langSelect{
   font-size: 3vh;
-  color: #ddd;
+  color: #FEFFDC;
 }
 #contenedor_carga{
 	background-color: rgba(255, 255, 255, 0.9);

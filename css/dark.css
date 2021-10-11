@@ -1,3 +1,19 @@
 /* 
   Estilos para el modo obscuro
 */
+
+
+.fondoD{
+  background-color: #242225;
+}
+
+.fondoDegradadoD{
+  background: linear-gradient(180deg, #000 0%, #111 40%, #24222580);
+}
+.fondoDegInvD{
+  background: linear-gradient(0deg, #000 0%, #111 40%, #24222580);
+}
+
+.colorTextoD{
+  color: #FEFFDC;
+}

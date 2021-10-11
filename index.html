@@ -26,7 +26,12 @@
     <div class="col-sm-12 nv">
       <img src="img/Logo 1.png" alt="logoPersonal" class="img-logo" />
       <figure class="figure">
-        <figcaption class="figure-caption"><span id="langSelect">ES </span><a href="indexEn.html"><img src="img/despliega w.svg" alt="icono cambio de idioma"></a></figcaption>
+        <figcaption class="figure-caption" id="fc"><span id="langSelect">ES </span>
+          <a href="indexEn.html" id="cambiaLeng">
+            <img src="img/despliega w.svg" alt="icono cambio de idioma" class="iconoD">
+            <img src="img/despliega.svg" alt="icono cambio de idioma" class="iconoL">
+          </a>
+        </figcaption>
         <img src="img/banderaMX.svg" alt="bandera de México" class="figure-img img-fluid rounded" id="bandera" />
       </figure>
       <ul id="menu">
@@ -37,8 +42,8 @@
             <li class="cabeceraMenu">OPCIONES</li>
             <li>
               <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch1">
-              <label class="custom-control-label" for="customSwitch1">Modo obscuro</label>
+                <input type="checkbox" class="custom-control-input modeD" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Modo obscuro</label>
               </div>
             </li>
           </ul>
@@ -46,161 +51,166 @@
       </ul>
     </div>
     <div class="titulos">
-      <h2>Desarrollador</h2>
+      <h1>Developer</h1>
       <h2>Luis Angel Durán</h2>
     </div>
   </header>
-  <main class="container">  
-      <article>  
-          <h3>Sobre mi</h3>
-          <p class="txt">
-            Quiero trabajar en una empresa donde pueda aplicar mis conocimientos desarrollando soluciones que aporten de manera positiva a la mayor cantidad de personas y aprendiendo detalles avanzados de estos mismos, ganando lo suficiente para vivir cómodamente y que me deje tiempo para continuar aprendiendo más lenguajes, familiares, amigos, hobbies y proyectos personales.
-          </p>
-      </article>
-      <article>
-        <h3>Intereses</h3>
-        <p class="txt">
-          Solo estoy interesado en algún empleo como desarrollador ya sea para Front End, Back End incluso Full Stack. Estoy abierto a escuchar ofertas de proyectos freelance en los que pueda aprender aplicar diferentes tecnologías y de este modo conocer más.
-        </p>
-      </article>
-      <section class="tecnologiesAndCertificates">
-        <h3>Tecnologias y Certificaciones</h3>
-        <div class="logos mx-4">
-          <div class="row d-flex flex-nowrap mb-4">
-            <div class="col-sm-4 col-xl-2">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
-                alt="logo javascript" class="logoT">
-            </div>
-            <div class="col-sm-4 col-xl-2">
-              <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="logo bootstrap" class="logoT">
-            </div>
-            <div class="col-sm-4 col-xl-2">
-              <img src="img/logo_java.svg" alt="logo java" class="logoT">
-            </div>
+  <main class="container">
+    <article>
+      <h3 class="h3">Sobre mi</h3>
+      <p class="txt">
+        Quiero trabajar en una empresa donde pueda aplicar mis conocimientos desarrollando soluciones que aporten de
+        manera positiva a la mayor cantidad de personas y aprendiendo detalles avanzados de estos mismos, ganando lo
+        suficiente para vivir cómodamente y que me deje tiempo para continuar aprendiendo más lenguajes, familiares,
+        amigos, hobbies y proyectos personales.
+      </p>
+    </article>
+    <article>
+      <h3 class="h3">Intereses</h3>
+      <p class="txt">
+        Solo estoy interesado en algún empleo como desarrollador ya sea para Front End, Back End incluso Full Stack.
+        Estoy abierto a escuchar ofertas de proyectos freelance en los que pueda aprender aplicar diferentes tecnologías
+        y de este modo conocer más.
+      </p>
+    </article>
+    <section class="tecnologiesAndCertificates">
+      <h3 class="h3">Tecnologias y Certificaciones</h3>
+      <div class="logos mx-4">
+        <div class="row d-flex flex-nowrap mb-4">
+          <div class="col-sm-4 col-xl-2">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+              alt="logo javascript" class="logoT">
           </div>
-          <div class="row d-flex flex-nowrap mb-4">
-            <div class="col-sm-4 col-xl-2">
-              <img src="img/logo html.svg" alt="logo html" class="logoT">
-            </div>
-            <div class="col-sm-4 col-xl-2">
-              <img src="img/logo ccs.svg" alt="logo css" class="logoT">
-            </div>
-            <div class="col-sm-4 col-xl-2">
-              <img src="https://midu.dev/images/tags/github.png" class="logoT">
-            </div>
+          <div class="col-sm-4 col-xl-2">
+            <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="logo bootstrap" class="logoT">
           </div>
-          <div class="row d-flex flex-nowrap mb-4">
-            <div class="col-sm-4 col-xl-2">
-              <img src="https://cdn.worldvectorlogo.com/logos/figma-1.svg" alt="logo javascript" class="logoT">
-            </div>
-            <div class="col-sm-4 col-xl-2">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png"
+          <div class="col-sm-4 col-xl-2">
+            <img src="img/logo_java.svg" alt="logo java" class="logoT">
+          </div>
+        </div>
+        <div class="row d-flex flex-nowrap mb-4">
+          <div class="col-sm-4 col-xl-2">
+            <img src="img/logo html.svg" alt="logo html" class="logoT">
+          </div>
+          <div class="col-sm-4 col-xl-2">
+            <img src="img/logo ccs.svg" alt="logo css" class="logoT">
+          </div>
+          <div class="col-sm-4 col-xl-2">
+            <img src="https://midu.dev/images/tags/github.png" class="logoT">
+          </div>
+        </div>
+        <div class="row d-flex flex-nowrap mb-4">
+          <div class="col-sm-4 col-xl-2">
+            <img src="https://cdn.worldvectorlogo.com/logos/figma-1.svg" alt="logo javascript" class="logoT">
+          </div>
+          <div class="col-sm-4 col-xl-2">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png"
+              class="logoT">
+          </div>
+          <div class="col-sm-4 col-xl-2">
+            <button type="button" class="desplegable" id="Git">
+              <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" alt="logo git" class="logoT">
+            </button>
+          </div>
+        </div>
+        <div class="row d-flex flex-nowrap mb-4">
+          <div class="col-sm-3">
+          </div>
+          <div class="col-sm-6 col-xl-2">
+            <button type="button" class="desplegable" id="Scrum">
+              <img src="https://www.scrum.org/themes/custom/scrumorg/assets/images/logo-250.png" alt="logo Scrum"
                 class="logoT">
-            </div>
-            <div class="col-sm-4 col-xl-2">
-              <button type="button" class="desplegable" id="Git">
-                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" alt="logo git" class="logoT">
-              </button>
-            </div>
+            </button>
           </div>
-          <div class="row d-flex flex-nowrap mb-4">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-6 col-xl-2">
-              <button type="button" class="desplegable" id="Scrum">
-                <img src="https://www.scrum.org/themes/custom/scrumorg/assets/images/logo-250.png" alt="logo Scrum"
-                  class="logoT">
-              </button>
-            </div>
-            <div class="col-sm-3">
-            </div>
+          <div class="col-sm-3">
           </div>
-          <div class="popup-wrapper" id="popUpScrum">
-            <div class="popup">
-              <div id="popup-close-scrum" class="popup-close">X</div>
-              <div class="popup-content">
-                <h3>Certificado Scrum</h3>
-                <embed src="docs/Scrum.pdf" type="" class="certificados">
-              </div>
-            </div>
-          </div>
-          <div class="popup-wrapper" id="popUpGit">
-            <div class="popup">
-              <div id="popup-close-git" class="popup-close">X</div>
-              <div class="popup-content">
-                <h3>Certificado Git</h3>
-                <embed src="docs/Profecional de Git.pdf" type="" class="certificados">
-              </div>
-            </div>
-          </div>
-      </section>
-      <section class="repoCarrusel">
-        <h3>Repositorio</h3>
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="https://github.com/ramssrez/NakaMax-Generation" target="_blank" class="border-0">
-                <img src="img/contacto nakamas.png" class="d-block w-100" alt="fragmento de pagina">
-              </a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="info">Participacion en proyecto Naka +</h5>
-                <p class="info">Participacion activa en todas las areas a lo largo de todo el proyecto.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://github.com/LuisAngelBonCorpse/tareasDel16" target="_blank" rel="noopener noreferrer">
-                <img src="img/proyectPozole.png" class="d-block w-100" alt="imagen de proyecto pozole">
-              </a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="info">Proyecto pozole</h5>
-                <p class="info">Tarea de maquetacion de un restaurante de pozole, realizado con puro CSS y HTML.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://github.com/LuisAngelBonCorpse/Bitacora" target="_blank" rel="noopener noreferrer">
-                <img src="img/Home bitacora dia-noche v1.0.png" class="d-block w-100" alt="imagen del home de bitacora">
-              </a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="info">Página de inicio de proyecto personal sobre una bitacora.</h5>
-                <p class="info">Proyecto en progreso donde aplico mis conocimientos y quiero hacer una recopilacion
-                  visual de mis viajes y programar nuevos.</p>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-          </a>
         </div>
-      </section>
-      <section class="UnsplashAPI border border-dark rounded">
-        <h3>Busqueda de imagenes con la API de Unsplash</h3>
-        <form class="row flex-nowrap mx-5">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Busca imagenes" aria-label="Recipient's username"
-              aria-describedby="button-addon2" id="keyWords" />
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="searchI">
-                <img src="https://cdn-icons-png.flaticon.com/512/48/48639.png" alt="Search Icon" width="23" />
-              </button>
+        <div class="popup-wrapper" id="popUpScrum">
+          <div class="popup">
+            <div id="popup-close-scrum" class="popup-close">X</div>
+            <div class="popup-content">
+              <h3>Certificado Scrum</h3>
+              <embed src="docs/Scrum.pdf" type="" class="certificados">
             </div>
           </div>
-        </form>
-        <div id="resultadosI">
+        </div>
+        <div class="popup-wrapper" id="popUpGit">
+          <div class="popup">
+            <div id="popup-close-git" class="popup-close">X</div>
+            <div class="popup-content">
+              <h3>Certificado Git</h3>
+              <embed src="docs/Profecional de Git.pdf" type="" class="certificados">
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="repoCarrusel">
+      <h3 class="h3">Repositorio</h3>
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://github.com/ramssrez/NakaMax-Generation" target="_blank" class="border-0">
+              <img src="img/contacto nakamas.png" class="d-block w-100" alt="fragmento de pagina">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="info">Participacion en proyecto Naka +</h5>
+              <p class="info">Participacion activa en todas las areas a lo largo de todo el proyecto.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/LuisAngelBonCorpse/tareasDel16" target="_blank" rel="noopener noreferrer">
+              <img src="img/proyectPozole.png" class="d-block w-100" alt="imagen de proyecto pozole">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="info">Proyecto pozole</h5>
+              <p class="info">Tarea de maquetacion de un restaurante de pozole, realizado con puro CSS y HTML.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/LuisAngelBonCorpse/Bitacora" target="_blank" rel="noopener noreferrer">
+              <img src="img/Home bitacora dia-noche v1.0.png" class="d-block w-100" alt="imagen del home de bitacora">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="info">Página de inicio de proyecto personal sobre una bitacora.</h5>
+              <p class="info">Proyecto en progreso donde aplico mis conocimientos y quiero hacer una recopilacion
+                visual de mis viajes y programar nuevos.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </section>
+    <section class="UnsplashAPI border border-dark rounded">
+      <h3>Busqueda de imagenes con la API de Unsplash</h3>
+      <form class="row flex-nowrap mx-5">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Busca imagenes" aria-label="Recipient's username"
+            aria-describedby="button-addon2" id="keyWords" />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="searchI">
+              <img src="https://cdn-icons-png.flaticon.com/512/48/48639.png" alt="Search Icon" width="23" />
+            </button>
+          </div>
+        </div>
+      </form>
+      <div id="resultadosI">
 
-        </div>
-      </section>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="container row-cols-2 row-cols-xl-3 d-flex flex-wrap">

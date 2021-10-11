@@ -1,3 +1,30 @@
 /* 
   Estilos para el modo claro
 */
+
+
+.fondoL{
+  background-color: #F5F6C9;
+}
+#menu .fondoL{
+  background-color: #F5F6C9;
+  color: #242225;
+}
+#menu .fondoL:hover {
+  background:#FAFE98; 
+  color: #242225;
+}
+
+.fondoDegradadoL{
+  background: linear-gradient(180deg, #FAFE98 0%,#FCFECA 40%, #FEFFDC80);
+}
+.fondoDegInvL{
+  background: linear-gradient(0deg, #FAFE98 0%,#FCFECA 40%, #FEFFDC80);
+}
+
+#fc .colorTextoL{
+  color: #242225;
+}
+.colorTextoL{
+  color: #242225;
+}

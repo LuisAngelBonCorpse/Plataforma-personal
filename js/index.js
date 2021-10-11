@@ -13,6 +13,8 @@ const $git = document.querySelector('#Git');
 const $popUpGit = document.querySelector('#popUpGit');
 const $closeGit = document.querySelector('#popup-close-git');
 
+const $btnModeD = document.querySelector('.modeD');
+
 async function getImages(query) {
   let response = await fetch(endPoint + '?query=' + query + '&client_id=' + accesKey);
   let jsonResponse = await response.json();
@@ -100,4 +102,73 @@ window.onload = function(){
   var $contenedor = document.querySelector('#contenedor_carga');
   $contenedor.style.visibility = 'hidden';
   $contenedor.style.display = 'none'; 
+}; // en cuanto carga el contenido completo se oculta el loader
+
+$btnModeD.addEventListener('click', () => {
+  validaModo();
+});
+
+$btnModeD.checked = true;
+  validaModo();
+
+function validaModo() {
+  if ($btnModeD.checked) {
+    document.body.classList.add('fondoD'); 
+    document.body.classList.remove('fondoL');
+
+    document.querySelector('.nv').classList.add('fondoDegradadoD');
+    document.querySelector('.nv').classList.remove('fondoDegradadoL');
+
+    document.querySelector('footer').classList.add('fondoDegInvD');
+    document.querySelector('footer').classList.remove('fondoDegInvL');
+    
+    document.querySelector('#langSelect').classList.remove('colorTextoL');
+
+    const desplegable = document.querySelectorAll('.desplegable');
+    desplegable.forEach(element => element.classList.remove('fondoL'));
+
+    const h3 = document.querySelectorAll('.h3'); 
+    h3.forEach(element => element.classList.remove('colorTextoL'));
+
+    const txts = document.querySelectorAll('.txt'); 
+    txts.forEach(element => element.classList.remove('colorTextoL'));
+
+    const iconos = document.querySelectorAll('.iconoL');
+    iconos.forEach(element => element.style.display = 'none');
+    const iconos2 = document.querySelectorAll('.iconoD');
+    iconos2.forEach(element => element.style.display = 'inline-block');
+
+    const li = document.querySelectorAll('li');
+    li.forEach(element => element.classList.remove('fondoL'));
+
+  } else {
+    document.body.classList.add('fondoL');
+    document.body.classList.remove('fondoD');
+
+    document.querySelector('.nv').classList.add('fondoDegradadoL');
+    document.querySelector('.nv').classList.remove('fondoDegradadoD');
+    
+    document.querySelector('footer').classList.add('fondoDegInvL');
+    document.querySelector('footer').classList.remove('fondoDegInvD');
+
+    document.querySelector('#langSelect').classList.add('colorTextoL');
+
+    const desplegable = document.querySelectorAll('.desplegable');
+    desplegable.forEach(element => element.classList.add('fondoL'));
+
+    const h3 = document.querySelectorAll('.h3'); 
+    h3.forEach(element => element.classList.add('colorTextoL'));
+    
+    const txts = document.querySelectorAll('.txt'); 
+    txts.forEach(element => element.classList.add('colorTextoL'));
+    
+    const iconos = document.querySelectorAll('.iconoD');
+    iconos.forEach(element => element.style.display = 'none');
+    const iconos2 = document.querySelectorAll('.iconoL');
+    iconos2.forEach(element => element.style.display = 'inline-block');
+
+    const li = document.querySelectorAll('li');
+    li.forEach(element => element.classList.add('fondoL'));
+    ;
+  }
 }

@@ -26,8 +26,12 @@
     <div class="col-sm-12 nv">
       <img src="img/Logo 1.png" alt="logoPersonal" class="img-logo" />
       <figure class="figure">
-        <figcaption class="figure-caption"><span id="langSelect">EN </span><a href="index.html"><img
-              src="img/despliega w.svg" alt="icono cambio de idioma"></a></figcaption>
+        <figcaption class="figure-caption" id="fc"><span id="langSelect">EN </span>
+          <a href="index.html" id="cambiaLeng">
+            <img src="img/despliega w.svg" alt="icono cambio de idioma" class="iconoD">
+            <img src="img/despliega.svg" alt="icono cambio de idioma" class="iconoL">
+          </a>
+        </figcaption>
         <img src="img/banderaEU.svg" alt="bandera de los EU" class="figure-img img-fluid rounded" id="bandera" />
       </figure>
       <ul id="menu">
@@ -38,8 +42,8 @@
             <li class="cabeceraMenu">OPTIONS</li>
             <li>
               <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="customSwitch1">
-              <label class="custom-control-label" for="customSwitch1">Modo obscuro</label>
+                <input type="checkbox" class="custom-control-input modeD" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Dark mode</label>
               </div>
             </li>
           </ul>
@@ -53,7 +57,7 @@
   </header>
   <main class="container">
     <article>
-      <h3>About me</h3>
+      <h3 class="h3">About me</h3>
       <p class="txt">
         I want to work in a company where I can continue learning more
         programming languages ​​or details of which I already know too
@@ -63,7 +67,7 @@
       </p>
     </article>
     <article>
-      <h3>Interests.</h3>
+      <h3 class="h3">Interests</h3>
       <p class="txt">
         I am interested in a job as a developer, Front End, Back end or Full
         Stack Junior. I am also open to listening to freelance projects to
@@ -71,7 +75,7 @@
       </p>
     </article>
     <section class="tecnologiesAndCertificates">
-      <h3>Tecnologies & Certificates</h3>
+      <h3 class="h3">Tecnologies & Certificates</h3>
       <div class="logos mx-4">
         <div class="row d-flex flex-nowrap mb-4">
           <div class="col-sm-4 col-xl-2">
@@ -144,7 +148,7 @@
         </div>
     </section>
     <section class="repoCarrusel">
-      <h3>Repository</h3>
+      <h3 class="h3">Repository</h3>
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
