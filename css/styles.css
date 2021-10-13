@@ -54,7 +54,7 @@ header{
   max-height: 200px;
 }
 main{
-  padding-top: 17vh;
+  padding-top: 20vh;
 }
 
 /* Selectores por clase */
@@ -251,7 +251,7 @@ main{
 
 /* Media */
 
-@media only screen and (min-height: 761px) {
+@media only screen and (min-height: 700px) {
   main{
     padding-top: 25vh;
   }
